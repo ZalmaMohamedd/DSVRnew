@@ -1,0 +1,249 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylep.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+
+
+</head>
+<body>
+
+<!--------            Hero Section       --------->
+
+<section id="hero">
+
+    <div class="hero-container">
+
+        <div class="row" style="width:100%;">
+            <div class="column-1">
+                <div class="header">
+                    <h2>My<span>Profile</span></h2></a> 
+                    <div class="icons">
+                        <div id="drop-down-menu" class="fa fa-bars" aria-hidden="true" onclick="toggleMenu()"></div>
+                    </div>
+                  
+                </div>
+                <div class="hero-data">
+                    <table>
+                        <tr>
+                        </tr>
+                        <tr>
+                          <td>Name:</td>
+                          <td>Ahmed</td>
+                        <tr>
+    
+                        </tr>
+                          <td>Age:</td>
+                          <td>6</td>
+                          <tr>
+                        </tr>
+                        <td>ID:</td>
+                        <td>01</td>
+                        <tr>
+                          </tr>
+                          <td>Email:</td>
+                          <td>-</td>
+                        </tr>
+                        
+                        <tr>
+                        <tr>
+                        <td>Gender:</td>
+                        <td>Boy</td>
+                        </tr>
+                        <tr>
+    
+                        
+                        <tr>
+                        <td>Mobile Number(parent):</td>
+                        <td>-</td>
+                        </tr>
+                        <tr></tr>
+                          <tr>
+                            <td>Parent Name:</td>
+                            <td>Aly Abdelwahid</td>
+                          </tr>
+    
+                          <tr>
+                        
+                        </tr>
+                      </table>
+                    
+                    
+                </div>
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                      <div class="user-info">
+                        <h2>Services</h2>
+                      </div>
+                      <hr>
+                
+                      <a href="#" class="sub-menu-link">
+                        <img src="img/profile.png" >
+                        <p>Edit Profile</p>
+                        <span>></span>
+                
+                      </a>
+                      <a href="#" class="sub-menu-link">
+                        <img src="img/setting.png" >
+                        <p>Notifications</p>
+                        <span>></span>
+                      </a>
+              
+                      <a href="#" class="sub-menu-link">
+                        <img src="img/help.png" >
+                        <p>Help</p>
+                        <span>></span>
+                      </a>
+              
+                      <a href="#" class="sub-menu-link">
+                        <img src="img/logout.png" >
+                        <p>Logout</p>
+                        <span>></span>
+                      </a>
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+            
+    
+                
+    
+    
+            </div>  
+
+            <div class="column-2">
+                <div class="icon"><img width="128" height="128" src="https://img.icons8.com/arcade/128/virtual-reality.png" alt="virtual-reality"/></div>
+    
+                <h1>Hello<span>,</span></h1>
+                <h2>Ahmed!</h2>
+                <hr>
+    
+                <p>You're in level 2!</p>
+              </div>
+            </div>
+        
+        </div>
+              
+
+
+          
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+
+<!--------      End of Hero Section       --------->
+
+
+
+<!--------       
+    
+        <div class="hero-data">
+                    <table>
+                        <tr>
+                        </tr>
+                        <tr>
+                          <td>Name:</td>
+                          <td>Ahmed</td>
+                        <tr>
+    
+                        </tr>
+                          <td>Age:</td>
+                          <td>6</td>
+                          <tr>
+                          </tr>
+                          <td>Email:</td>
+                          <td>-</td>
+                        </tr>
+                        
+                        <tr>
+                        <tr>
+                        <td>Gender:</td>
+                        <td>Boy</td>
+                        </tr>
+                        <tr>
+    
+                        
+                        <tr>
+                        <td>Mobile Number(parent):</td>
+                        <td>-</td>
+                        </tr>
+                        <tr></tr>
+                          <tr>
+                            <td>Parent Name:</td>
+                            <td>Aly Abdelwahid</td>
+                          </tr>
+    
+                          <tr>
+                        
+                        </tr>
+                      </table>
+                    
+                    
+                </div>
+    
+    My Profile Section       --------->
+
+<section id="MyProgress">
+
+
+    <div class="MyProgress container">
+        <div class="MyProgres-top">
+            <h1 class="section-title">My <span>P</span>rogress</h1>
+        </div>
+        <div class="chartcontainer">
+          <div class="chart">
+            <canvas id="barchart" width="300" height="300"></canvas>
+          </div>
+
+          <div class="chart">
+            <canvas id="linechart" width="300" height="300"></canvas>
+          </div>
+        </div>
+
+
+
+    </div>
+
+
+</section>
+<!--------      End of My Profile Section       --------->
+
+
+
+<!--------           MyProgress Section       --------->
+
+<section id="MyProgress">
+
+</section>
+<!--------      End of MyProgress Section       --------->
+
+    <script>
+      let subMenu = document.getElementById("subMenu");
+      function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+      }
+
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.min.js"></script>
+<script src="chart1.js"></script>
+<script src="chart2.js"></script> 
+<script src="chart3.js"></script>  
+<script src="script.js"></script>  
+<script src="script2.js"></script>  
+
+</body>
+</html>

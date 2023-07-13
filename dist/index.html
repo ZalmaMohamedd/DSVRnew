@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    
+</head>
+<body>
+
+
+  <!-- header section starts  -->
+
+<section id="header">
+
+  <div class="header-1">
+    <a href="#" class="logo">DSVR</a>    
+    <div class="icons">
+      <div id="login-btn" class="fas fa-user"></div>
+      <div id="logout-btn" class="fa fa-sign-out"></div>
+      <div id="Analyze-btn" class="fa fa-area-chart" aria-hidden="true"></div>
+      <div id="drop-down-menu" class="fa fa-bars" aria-hidden="true" onclick="toggleMenu()"></div>
+
+    </div>
+
+    <div class="sub-menu-wrap" id="subMenu">
+      <div class="sub-menu">
+        <div class="user-info">
+          <h2>Services</h2>
+        </div>
+        <hr>
+  
+        <a href="#SignIn-container" class="sub-menu-link">
+          <img src="img/profile-menu-img/profile.png" >
+          <p>Create a new account</p>
+          <span>></span>
+  
+        </a>
+        <a href="#" class="sub-menu-link">
+          <img src="img/profile-menu-img/setting.png" >
+          <p>Notifications</p>
+          <span>></span>
+        </a>
+
+        <a href="#" class="sub-menu-link">
+          <img src="img/profile-menu-img/help.png" >
+          <p>Help</p>
+          <span>></span>
+        </a>
+
+        <a href="#" class="sub-menu-link">
+          <img src="img/profile-menu-img/logout.png" >
+          <p>Logout:</p>
+          <div"><button class="logoutdrop"> Confirm </button></div>
+          <span> ></span>
+        </a>
+
+        
+        
+      </div>
+      
+    </div>
+    
+  </div>
+
+
+
+
+  </div>
+
+  <div class="header-2">
+    <nav class="navbar">
+      <a href="#hero">home</a>
+      <a href="#OurVision">Our Vision</a>
+      <a href="#About1">Aboutus</a>
+      <a href="#About2">OurTeam</a>
+    </nav>
+
+  </div>
+
+
+</section>
+
+
+<section id="hero">
+
+  <div class="hero container">
+    <div>
+      <h1>For a better <span></span></h1>
+      <h1>living experience,<span></span></h1>
+      <h1>DSVR <span></span></h1>
+      <a href="profile.html" type="button" class="cta">My Progress</a>
+    </div>  
+  </div>
+</section>
+
+<!--------      End of Hero Section       --------->
+
+
+<!-- login form  -->
+
+
+<section id="login">
+
+  <div class="Login-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+  
+    <form action="">
+        <h3>sign in</h3>
+        <span>Email</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="EnterEmail">
+        <span>ID</span>
+        <input type="text" name="id" class="box" placeholder="enter your ID" id="EnterID">
+        <span>Password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="EnterPass">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> remember me</label>
+        </div>
+        <button id="SignInOutForm" type="button" class="btn btn-primary btn-lg btn-block">login</button>
+
+
+        <p >don't have an account ?<a href="#SignIn">create one</a></p>
+
+    </form>
+  
+  </div>
+</section>
+
+
+<!----------  Vision/service Section         --------->
+
+<section id="OurVision">
+<div class="OurVision container">
+  <div class="Vision-top">
+    <h1 class="section-title">Our <span>V</span>ision</h1> <!-- this is to have s as diff color-->
+    <h2> We believe that every child deserves a better chance in living, which only starts at their education journey, 
+      with our <span>Interactive virtual reality cognitive rehabilitation educational game,</span> we are one step closer 
+      to making the learning experience of Down syndrome children Interactive smooth, and more fun. 
+    </h2>
+  </div>
+  <div class="Vision-buttom">
+    <div class="Vision-item">
+      <div class="icon"><img src="https://img.icons8.com/external-soft-fill-juicy-fish/60/000000/external-progress-infographic-elements-soft-fill-soft-fill-juicy-fish.png"/></div>
+      <h2> Virtual Enviroment</h2>
+      <p> improving their independence and interaction with society</p>
+    </div>
+    <div class="Vision-item2">
+      <div class="icon"><img src="https://img.icons8.com/external-soft-fill-juicy-fish/60/000000/external-progress-infographic-elements-soft-fill-soft-fill-juicy-fish.png"/></div>
+      <h2></h2>
+      <p> paragraph about new learning tech</p>
+    </div>
+    <div class="Vision-item">
+      <div class="icon"><img src="https://img.icons8.com/external-soft-fill-juicy-fish/60/000000/external-progress-infographic-elements-soft-fill-soft-fill-juicy-fish.png"/></div>
+      <h2> New Learning Tech</h2>
+      <p>VR has a positive effect on children’s memory and brain plasticity </p>
+    </div>
+  </div>
+</div> 
+</section>
+
+
+
+ <!----------  End Vision Section      -------->
+
+
+
+ <!----------     About Section    -------->
+
+ <section id="About1"> 
+  <div class="About1 container">
+   <div class="about-top">
+    <h1 class="section-title">About <span>Us</span></h1> <!-- this is to have s as diff color-->
+    <!--<div class="icon"><img src="https://img.icons8.com/bubbles/50/null/meeting.png"/></div>--->
+    <p>We are students in biomedical engineering, Cairo University.
+      This is our graduation project which is cognitive rehabilitation using 
+      virtual reality for children with Down syndrome. We're enthuastic to make a
+    world for down syndrome children where they have a better
+  education, hence a better chance of living.</p>
+   </div>
+
+  </div>
+</section>
+
+ <!------------------                          ---------------->
+
+<section id="About2">
+  <div class="about2-container">
+    <h2 class="section-title">Our <span>Team</span></h1> <!-- this is to have s as diff color-->
+    <div class="about-buttom">
+        <div class="about-item1">
+          <div class="img">
+            <img src="./img/asma2.jpeg" alt="img">
+          </div>
+          <div class="title1">
+            <h2>Asma Ibrahim</h2>
+            <a href="#" type="button" class="cta">LinkedIn</a>
+          </div>
+        </div>
+        <div class="about-item2">
+          <div class="img">
+            <img src="./img/salmapro.jpeg" alt="img">
+          </div>
+          <div class="title2">
+            <h2>Salma Mohamed</h2>
+            <a href="#" type="button" class="cta">LinkedIn</a>
+          </div>
+        </div>
+        <div class="about-item3">
+          <div class="img">
+            <img src="./img/Alaa2.jpeg" alt="img">
+          </div>
+          <div class="title1">
+            <h2> Alaa Moselhy</h2>
+            <a href="#" type="button" class="cta">LinkedIn</a>
+          </div>
+        </div>
+  
+  </div>
+
+
+</section>
+
+ <!----------   End About Section      -------->
+
+
+
+
+ <!----------   Contact Section      -------->
+
+<section id="Contactus">
+
+
+
+
+  <div class="contactus container">
+    <div>
+      <h2 class="section-title">Contact<span>us</span></h1> <!-- this is to have s as diff color-->
+        <h2><a href="url">asmaa.ibrahim01@eng-st.cu.edu.eg</a></h2>
+        <h2><a href="url">Salma.Aly00@eng-st.cu.edu.eg</a></h2>
+        <h2><a href="url">Salma.Aly00@eng-st.cu.edu.eg</a></h2>
+
+        <h1>DSVR<span></span></h1>
+    </div> 
+
+  </div>
+
+</section>
+
+
+
+<!------------------ Creat new user ------------------------>
+<!---------------------------------------------------->
+<!---------------------------------------------------->
+
+
+<section id="userdata">
+  <div class="userdata-container" id="userdata-container">
+    <header>Create a new account</header>
+    <h1>Step <span>2</span> of 2</h1>
+    <form action="#" class="form">
+      <div class="input-box">
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter full name" required />
+      </div>
+      <div class="input-box">
+        <label>Guardian name</label>
+        <input type="text" id="parent" placeholder="Enter full name" required />
+      </div>
+      <div class="input-box">
+        <label>Email Address</label>
+        <input type="email" id="dataemail" placeholder="Enter email address" required />
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Guardian Mobile</label>
+          <input type="number" id="mobile" placeholder="Enter phone number" required />
+        </div>
+
+      <div>
+        <button id="userdataformbtn">Sign In</button>
+      </div>
+    </form>
+  </div>
+
+</section>
+
+
+
+<section id="SignIn">
+  <div class="SignIn-container" id="SignIn-container">
+    <header>Create a new account</header>
+    <h1>Step <span>1</span> of 2</h1>
+    <form action="#" class="form">
+      <div class="input-box">
+        <label>Enter You Email</label>
+        <input type="email" id="signinemail" placeholder="Enter your email" required />
+      </div>
+      <div class="input-box">
+        <label>Create a Password</label>
+        <p>password should be 6 charachters or longer</p>
+        <input type="password" id="signinpassword" placeholder="Password" required />
+      </div>
+      <div>
+        
+        <button id="SignInFormbtn" type="button">Go to step 2</button>
+
+      </div>
+      <p>Already have an account ? <a href="#">Login</a></p>
+    </form>
+  </div>
+
+</section>
+
+
+
+
+
+<!---------------------------------------------------->
+<!---------------------------------------------------->
+<!---------------------------------------------------->
+
+
+
+ <!----------   End contact Section      -------->
+
+
+
+
+
+  <h1>hi</h1>
+
+  <hr>
+
+<section>
+  <form class="add">
+    <label for="title">Title:</label>
+    <input type="text" name="title" required>
+    <label for="author">Author:</label>
+    <input type="text" name="author" required>
+    
+    <button>add a new book</button>
+  
+  </form>
+</section>
+
+
+
+<!--
+
+  
+<section id="newuser">
+
+  <div class="newuser-container">
+
+    <div id="close-newuser-btn" class="fas fa-times"></div>
+  
+    <form action="">
+        <h3>Create new user!</h3>
+        <span>Name:</span>
+        <input type="text" name="" class="box" placeholder="enter your name" id="name">
+        <span>Email:</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="emailuser">
+        <span>ID:</span>
+        <input type="text" name="" class="box" placeholder="enter your ID" id="id">
+        <span>Password:</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="passworduser">
+        <span>Parent Name:</span>
+        <input type="text" name="" class="box" placeholder="enter your Parent Name" id="parent">
+        <span>Age:</span>
+        <input type="number" name="" class="box" placeholder="enter your Age" id="age">
+        <span>mobile: </span>
+        <input type="number" name="" class="box" placeholder="enter your mobile number" id="mobile">
+        <label for="gender"><span>Gender:</span></label>
+        <select name="gender" id="gender">
+          <option value="boy">Boy</option>
+          <option value="girl">Girl</option>
+        </select>
+
+        <button id="NewuserForm" type="button" class="btn btn-primary btn-lg btn-block">Sign In</button>
+     
+    </form>
+  
+  </div>
+</section>
+
+  
+<hr>
+  <form class="adduser">
+    <label for="name">Name of child:</label>
+    <input type="text" name="name" required>
+    <label for="parent">Parent name:</label>
+    <input type="text" name="parent" required>
+    <label for="age">Age:</label>
+    <input type="number" name="age" required>
+    <label for="gender">Gender:</label>
+    <input type="text" name="gender" required>
+    <label for="id">ID:</label>
+    <input type="number" name="id" required>
+    <label for="mobile">mobile number:</label>
+    <input type="number" name="mobile" required>
+    <label for="email">email:</label>
+    <input type="email" name="emailuser">
+    <label for="passworduser">passworddd:</label>
+    <input type="password" name="passworduser">
+
+    <button id="alo">Create new user</button>
+  </form>
+
+
+        <form class="delete">
+          <label for="id">Document id:</label>
+          <input type="text" name="id" required>
+  
+          <button>delete a book</button>
+      </form>
+  
+      <form class="update">
+          <label for="id">Document id</label>
+          <input type="text" name="id" required>
+  
+          <button> update a book</button>
+      </form>
+  
+      <form class="signup">
+          <label for="email">email:</label>
+          <input type="email" name="email">
+          <label for="password">password:</label>
+          <input type="password" name="password">
+  
+          <button>signup</button>
+      </form>
+  
+      <form class="login">
+          <label for="email">email:</label>
+          <input type="email" name="email">
+          <label for="password">password:</label>
+          <input type="password" name="password">
+  
+          <button>login</button>
+      </form>
+
+      <div id="login-form">
+        <div class="well">
+          <h3>Please Sign in or Create new user</h3>
+        <form>
+          <div class="form-group">
+            <label for="inputEmail">Email address</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+          </div>
+            
+          <button id="create-newuser-button" type="button" class="btn btn-lg btn-block">Create new account</button>
+          <button id="login2button" type="button" class="btn btn-primary btn-lg btn-block">login</button>
+        </form>
+      </div>
+    </div>
+      
+
+-->
+
+
+
+<button class="logout">logout</button>
+
+<div class="popup">
+  <div class="close-popup-btn">&times;</div>
+  <div class="form">
+    <div class="icon"><img width="96" height="96" src="https://img.icons8.com/color/96/checked--v1.png" alt="checked--v1"/></div>
+
+    <div class="form-element">
+      <h1>You have succsefully logged in with your account!</h1>
+    </div>
+
+</div>
+
+
+
+
+
+    
+
+
+
+
+
+
+    <script src="bundle.js"></script>
+    <script>
+      let subMenu = document.getElementById("subMenu");
+      function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+      }
+
+    </script>
+</body>
+</html>
